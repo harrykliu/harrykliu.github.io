@@ -1,5 +1,3 @@
 # harrykliu.github.io
 
-##Personal Website
-
-###Coded with HTML and CSS
+Personal Website - Coded with HTML and CSS
