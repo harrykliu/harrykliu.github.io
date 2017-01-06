@@ -1,0 +1,228 @@
+@charset "UTF-8";
+html, 
+html * {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+h1  {
+	font-size: 2.5em;
+	font-family: league-gothic;
+	font-style: normal;
+	font-weight: 400;
+	text-shadow: 0 0 #222325;
+	margin-top: auto;
+	color: #001A57;
+	padding-left: auto;
+	padding-right: auto;
+}
+h2 {
+	font-family: bitter;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 1.7em;
+	color: #001A57;
+	text-align: center;
+	margin-top: auto;
+	margin-bottom: auto;
+	padding-top: 1%;
+}
+h3 {
+	margin-top: 10px;
+	font-size: x-large;
+	color: #FFFFFF;
+	font-weight: 600;
+	text-align: center;
+	text-shadow: 1px 1px #474545;
+	padding-left:2px;
+	padding-right:2px;
+}
+p {
+	font-family: lato;
+	font-style: normal;
+	font-weight: 400;
+	font-size: large;
+	text-align: center;
+	color: #800000;
+	margin:0;
+	padding-bottom: 20px;
+}
+img {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	padding-left: 0px;
+}
+a img {
+	display: inline;
+}
+a {
+	color: #F8F677;
+	text-decoration: none;
+	padding-bottom: 0px;
+	font-size: large;
+}
+body {
+	font-family: lato;
+	font-style: normal;
+	font-weight: 400;
+	background-size: cover;
+	background-color: #dbecf1;
+	background-attachment: fixed;
+	margin-left: auto;
+	margin-right: auto;
+}
+nav   {
+	background-color: #222325;
+	color: white;
+	text-align: center;
+	padding: 10px;
+	margin-top: 1%;
+	margin-right: auto;
+	margin-left: auto;
+	width: auto;
+}
+footer {
+	color: white;
+	background-color: #222222;
+	text-align: center;
+	font-size: small;
+	padding: 2%;
+}
+.title {
+	text-align: center;
+	color: #001A57;
+	font-family: cabin;
+	font-style: normal;
+	font-weight: 600;
+	margin-bottom: auto;
+	margin-top: auto;
+	font-size: 45px;
+}
+.contact {
+	margin: auto;
+	text-align: center;
+	-webkit-box-shadow: 0px px;
+	box-shadow: 0px px;
+}
+.navHome {
+	margin-left: 2%;
+	margin-right: 2%;
+	-webkit-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+	text-align: center;
+}
+.navPortfolio {
+	margin-left: 2%;
+	margin-right: 2%;
+	-webkit-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+	text-align: center;
+}
+.navResume {
+	margin-left: 2%;
+	margin-right: 2%;
+	-webkit-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+	text-align: center;
+}
+.navHome:hover {
+	color: #FFFFFF;
+	font-style: normal;
+	border-bottom: medium ridge #FFFFFF;
+}
+.navResume:hover {
+	color: #FFFFFF;
+	font-style: normal;
+	border-bottom: medium ridge #FFFFFF;
+}
+.navPortfolio:hover {
+	color: #FFFFFF;
+	font-style: normal;
+	border-bottom: medium ridge #FFFFFF;
+}
+.headshot {
+	float: none;
+	margin-top: 10px;
+	box-shadow: 2px 2px #000000;
+}
+.duke  {
+	background-size: cover;
+	border-radius: 2.5px;
+	background-repeat: no-repeat;
+	background-image: url(images/duke.jpg);
+	padding-top: 35px;
+	padding-bottom: 45px;
+	margin-top: 1%;
+}
+.team  {
+	background-size: cover;
+	border-radius: 2.5px;
+	background-repeat: no-repeat;
+	background-image: url(images/teamwork.jpg);
+	padding: 20px 20px 50px 20px;
+}
+.time  {
+	background-size: cover;
+	border-radius: 2.5px;
+	background-repeat: no-repeat;
+	background-image: url(images/freetime.jpg);
+	padding: 20px 20px 50px 20px;
+}
+.column{
+	width:100%;
+	padding: 4px 0px;
+	background: antiquewhite;
+}
+.main {
+	background-color: antiquewhite;
+}
+.row:before, .row:after {
+	content: "";
+	display: table;
+}
+.row:after {
+	clear: both;
+}
+.top {
+	font-size: medium;
+	color:white;
+}
+.top:hover {
+	color: #FFFFFF;
+	font-style: normal;
+	border-bottom:thin ridge #FFFFFF;
+}
+.foot {
+	color:white;
+	font-size: medium;
+}
+nav a {
+	font-size: x-large;
+}
+/*Tablet and Desktop View*/
+@media (min-width:550px){
+	body {
+		max-width: 900px;
+		margin-left: auto;
+		margin-right: auto;
+		width: auto;
+	}
+	footer{
+		margin-bottom: 1%;
+	}
+	.column-md-one-half{
+		width:50%;
+	}
+	.column{
+		padding:1%;	
+		float: left;
+	}
+	nav a {
+	font-size: large;
+	}
+}
