@@ -5,7 +5,6 @@ html * {
 	margin: 0;
 	box-sizing: border-box;
 }
-
 h1  {
 	font-size: 2.5em;
 	font-family: league-gothic;
@@ -28,15 +27,21 @@ h2 {
 	margin-bottom: auto;
 	padding-top: 1%;
 }
-h3 {
-	margin-top: 10px;
+.row h3 {
+	font-family: lato;
+	margin: 2%;
 	font-size: x-large;
 	color: #FFFFFF;
-	font-weight: 600;
+	font-weight: 425;
 	text-align: center;
-	text-shadow: 1px 1px #474545;
-	padding-left:2px;
-	padding-right:2px;
+}
+.rowalternate h3 {
+	font-family: lato;
+	margin: 2%;
+	font-size: x-large;
+	color: #222325;
+	font-weight: 425;
+	text-align: center;
 }
 p {
 	font-family: lato;
@@ -52,7 +57,6 @@ img {
 	margin-left: auto;
 	margin-right: auto;
 	display: block;
-	padding-left: 0px;
 }
 a img {
 	display: inline;
@@ -107,24 +111,24 @@ footer {
 	box-shadow: 0px px;
 }
 .navHome {
-	margin-left: 2%;
-	margin-right: 2%;
+	margin-left: 3%;
+	margin-right: 3%;
 	-webkit-transition: all .3s ease-in-out;
 	-o-transition: all .3s ease-in-out;
 	transition: all .3s ease-in-out;
 	text-align: center;
 }
 .navPortfolio {
-	margin-left: 2%;
-	margin-right: 2%;
+	margin-left: 3%;
+	margin-right: 3%;
 	-webkit-transition: all .3s ease-in-out;
 	-o-transition: all .3s ease-in-out;
 	transition: all .3s ease-in-out;
 	text-align: center;
 }
 .navResume {
-	margin-left: 2%;
-	margin-right: 2%;
+	margin-left: 3%;
+	margin-right: 3%;
 	-webkit-transition: all .3s ease-in-out;
 	-o-transition: all .3s ease-in-out;
 	transition: all .3s ease-in-out;
@@ -147,46 +151,27 @@ footer {
 }
 .headshot {
 	float: none;
-	margin-top: 10px;
+	margin: 1% auto;
 	box-shadow: 2px 2px #000000;
 }
-.duke  {
+.row  {
 	background-size: cover;
 	border-radius: 2.5px;
 	background-repeat: no-repeat;
-	background-image: url(images/duke.jpg);
-	padding-top: 35px;
-	padding-bottom: 45px;
-	margin-top: 1%;
+	padding-top: 25px;
+	padding-bottom: 35px;
+	background-color: #52658F;
 }
-.team  {
+.rowalternate  {
 	background-size: cover;
 	border-radius: 2.5px;
 	background-repeat: no-repeat;
-	background-image: url(images/teamwork.jpg);
-	padding: 20px 20px 50px 20px;
-}
-.time  {
-	background-size: cover;
-	border-radius: 2.5px;
-	background-repeat: no-repeat;
-	background-image: url(images/freetime.jpg);
-	padding: 20px 20px 50px 20px;
-}
-.column{
-	width:100%;
-	padding: 4px 0px;
-	background: #FFFFFF;
+	padding-top: 25px;
+	padding-bottom: 35px;
+	background-color: #FFFFFF;
 }
 .main {
 	background-color: #FFFFFF;
-}
-.row:before, .row:after {
-	content: "";
-	display: table;
-}
-.row:after {
-	clear: both;
 }
 .top {
 	font-size: medium;
@@ -204,6 +189,18 @@ footer {
 nav a {
 	font-size: x-large;
 }
+.rowtext {
+	float: none;
+	text-align: center;
+	width: 100%;
+}
+.rowimage  {
+	width: 100%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 /*Tablet and Desktop View*/
 @media (min-width:550px){
 	body {
@@ -212,15 +209,21 @@ nav a {
 		margin-right: auto;
 		width: auto;
 	}
+	.rowtext {
+		float: right;
+		width: 50%;
+	}
+	.rowtext h3 {
+		padding-right: 4%;
+		margin-top: 7%;
+	}
+	.rowimage  {
+		width: 50%;
+		display: block;
+		margin:0;
+	}
 	footer{
 		margin-bottom: 1%;
-	}
-	.column-md-one-half{
-		width:50%;
-	}
-	.column{
-		padding:1%;	
-		float: left;
 	}
 	nav a {
 	font-size: large;
