@@ -58,7 +58,7 @@ a img {
 	display: inline;
 }
 a {
-	color: #E8E8E8;
+	color: #FFFFFF;
 	text-decoration: none;
 	padding-bottom: 0px;
 	font-size: large;
@@ -131,17 +131,17 @@ footer {
 	text-align: center;
 }
 .navHome:hover {
-	color: #FFFFFF;
+	color: #FFFACD;
 	font-style: normal;
 	border-bottom: thin ridge #FFFFFF;
 }
 .navResume:hover {
-	color: #FFFFFF;
+	color: #FFFACD;
 	font-style: normal;
 	border-bottom: thin ridge #FFFFFF;
 }
 .navPortfolio:hover {
-	color: #FFFFFF;
+	color: #FFFACD;
 	font-style: normal;
 	border-bottom: thin ridge #FFFFFF;
 }
