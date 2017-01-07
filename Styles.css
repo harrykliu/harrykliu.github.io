@@ -133,17 +133,17 @@ footer {
 .navHome:hover {
 	color: #FFFFFF;
 	font-style: normal;
-	border-bottom: medium ridge #FFFFFF;
+	border-bottom: thin ridge #FFFFFF;
 }
 .navResume:hover {
 	color: #FFFFFF;
 	font-style: normal;
-	border-bottom: medium ridge #FFFFFF;
+	border-bottom: thin ridge #FFFFFF;
 }
 .navPortfolio:hover {
 	color: #FFFFFF;
 	font-style: normal;
-	border-bottom: medium ridge #FFFFFF;
+	border-bottom: thin ridge #FFFFFF;
 }
 .headshot {
 	float: none;
