@@ -209,6 +209,17 @@ nav a {
 		margin-right: auto;
 		width: auto;
 	}
+	.rowalternate .rowtext{
+		float: left;
+		width: 50%;
+		padding-left: 4%;
+	}
+	.rowalternate .rowimage{
+		width: 50%;
+		display: inline-block;
+		margin:0;
+		padding-left: 3%;
+	}
 	.rowtext {
 		float: right;
 		width: 50%;
