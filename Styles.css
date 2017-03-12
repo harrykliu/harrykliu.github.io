@@ -162,7 +162,7 @@ footer {
 	padding-bottom: 35px;
 	background-color: #52658F;
 }
-.rowalternate  {
+.rowalternate, .firstrow  {
 	background-size: cover;
 	border-radius: 2.5px;
 	background-repeat: no-repeat;
@@ -170,6 +170,7 @@ footer {
 	padding-bottom: 35px;
 	background-color: #FFFFFF;
 }
+
 .main {
 	background-color: #FFFFFF;
 }
@@ -209,10 +210,23 @@ nav a {
 		margin-right: auto;
 		width: auto;
 	}
+    .firstrow .rowtext{
+        font-size: 1.3em;
+        float: right;
+        padding-top: 8%;
+        margin-right: 7%;
+        width: 43%;
+    }
+    .firstrow .rowimage{
+        display: inline-block;
+        margin-left: 7%;
+        width: 43%;
+    }
 	.rowalternate .rowtext{
 		float: left;
 		width: 50%;
 		padding-left: 4%;
+        color: #0F1626;
 	}
 	.rowalternate .rowimage{
 		width: 50%;
