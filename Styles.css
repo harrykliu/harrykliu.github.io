@@ -65,8 +65,17 @@ a {
 	color: #FFFFFF;
 	text-decoration: none;
 	padding-bottom: 0px;
-	font-size: large;
+	font-size: x-large;
 }
+
+.music {
+    font-style: italic;
+}
+
+.music:hover {
+    text-decoration: underline;
+}
+
 body {
 	font-family: lato;
 	font-style: normal;
