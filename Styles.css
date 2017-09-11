@@ -27,7 +27,7 @@ h2 {
 	margin-bottom: auto;
 	padding-top: 1%;
 }
-.row h3 {
+.row h3, .rowalternate h3 {
 	font-family: lato;
 	margin: 2%;
 	font-size: x-large;
@@ -35,14 +35,7 @@ h2 {
 	font-weight: 425;
 	text-align: center;
 }
-.rowalternate h3 {
-	font-family: lato;
-	margin: 2%;
-	font-size: x-large;
-	color: #222325;
-	font-weight: 425;
-	text-align: center;
-}
+
 p {
 	font-family: lato;
 	font-style: normal;
@@ -65,15 +58,11 @@ a {
 	color: #FFFFFF;
 	text-decoration: none;
 	padding-bottom: 0px;
-	font-size: x-large;
+    font-size: x-large;
 }
 
-.music {
-    font-style: italic;
-}
-
-.music:hover {
-    text-decoration: underline;
+.main {
+	background-color: #FFFFFF;
 }
 
 body {
@@ -165,7 +154,6 @@ footer {
 }
 .row  {
 	background-size: cover;
-	border-radius: 2.5px;
 	background-repeat: no-repeat;
 	padding-top: 25px;
 	padding-bottom: 35px;
@@ -173,16 +161,21 @@ footer {
 }
 .rowalternate, .firstrow  {
 	background-size: cover;
-	border-radius: 2.5px;
 	background-repeat: no-repeat;
 	padding-top: 25px;
 	padding-bottom: 35px;
-	background-color: #FFFFFF;
 }
 
-.main {
-	background-color: #FFFFFF;
+.rowalternate {
+    background-color: #52658F;
 }
+
+.slideshow-container{
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
 .top {
 	font-size: medium;
 	color:white;
@@ -209,6 +202,53 @@ nav a {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.rowDot {
+   text-align:center;
+   background-color: #52658F;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 3px;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.mySlide {
+    display: none;
+}
+
+.dot {
+  cursor:pointer;
+  height: 12px;
+  width: 12px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #FFFFFF;
 }
 
 /*Tablet and Desktop View*/
@@ -253,9 +293,12 @@ nav a {
 	}
 	.rowimage  {
 		width: 50%;
-		display: block;
+		display: inline-block;
 		margin:0;
 	}
+    .rowimage .img{
+        border-radius: 5%;
+    }
 	footer{
 		margin-bottom: 1%;
 	}
