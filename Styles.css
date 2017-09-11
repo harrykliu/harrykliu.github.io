@@ -107,6 +107,7 @@ footer {
 	text-align: center;
 	-webkit-box-shadow: 0px px;
 	box-shadow: 0px px;
+    padding: 15px;
 }
 .navHome {
 	margin-left: 3%;
@@ -262,7 +263,7 @@ nav a {
     .firstrow .rowtext{
         font-size: 1.3em;
         float: right;
-        padding-top: 8%;
+        padding-top: 5%;
         margin-right: 7%;
         width: 43%;
     }
@@ -305,4 +306,5 @@ nav a {
 	nav a {
 	font-size: large;
 	}
+
 }
