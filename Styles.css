@@ -224,6 +224,10 @@ nav a {
   border-radius: 3px;
 }
 
+#google_translate_element {
+   font-size: 14px;
+}
+
 /* Position the "next button" to the right */
 .next {
   right: 0;
