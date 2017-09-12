@@ -226,6 +226,8 @@ nav a {
 
 #google_translate_element {
    font-size: 14px;
+   width: 50%;
+   height: 50%;
 }
 
 /* Position the "next button" to the right */
