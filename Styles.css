@@ -89,6 +89,7 @@ footer {
 	color: white;
 	background-color: #0F1626;
 	text-align: center;
+    align-content: center;
 	font-size: small;
 	padding: 2%;
 }
