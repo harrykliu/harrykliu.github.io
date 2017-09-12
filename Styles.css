@@ -89,7 +89,6 @@ footer {
 	color: white;
 	background-color: #0F1626;
 	text-align: center;
-    align-content: center;
 	font-size: small;
 	padding: 2%;
 }
@@ -226,9 +225,8 @@ nav a {
 }
 
 #google_translate_element {
-   font-size: 14px;
-   width: 50%;
-   height: 50%;
+   align-content: center;
+   text-align:center;
 }
 
 /* Position the "next button" to the right */
