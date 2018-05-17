@@ -1,29 +1,27 @@
 @charset "UTF-8";
-html, 
+
 html * {
 	padding: 0;
 	margin: 0;
-	box-sizing: border-box;
 }
+
+/* General */
+
 h1  {
 	font-size: 2.5em;
 	font-family: league-gothic;
-	font-style: normal;
 	font-weight: 400;
 	text-shadow: 0 0 #222325;
-	margin-top: auto;
 	color: #001A57;
 	padding-left: auto;
 	padding-right: auto;
 }
 h2 {
 	font-family: bitter;
-	font-style: normal;
 	font-weight: 700;
 	font-size: 1.7em;
 	color: #001A57;
 	text-align: center;
-	margin-top: auto;
 	margin-bottom: auto;
 	padding-top: 1%;
 }
@@ -34,6 +32,11 @@ h2 {
 	color: #FFFFFF;
 	font-weight: 425;
 	text-align: center;
+}
+
+h1, h2 {
+    font-style: normal;
+    margin-top: auto;
 }
 
 p {
@@ -62,46 +65,72 @@ a {
 }
 
 .main {
-	background-color: #FFFFFF;
-}
+    background-color: #FFFFFF; }
 
-body {
+.index {
+    margin: 0 auto;
 	font-family: lato;
 	font-style: normal;
 	font-weight: 400;
 	background-size: cover;
 	background-color: #F7F5E6;
-	background-attachment: fixed;
-	margin-left: auto;
-	margin-right: auto;
 }
-nav   {
-	background-color: #0F1626;
-	color: white;
+
+/* Header */
+
+.body {
+    clear: both; margin: 0 auto; text-align: center;
+}
+
+#title {
+    color: #000000;
+    margin: 0 auto;
+	font-family: inherit;
+	font-weight: bold;	
+	font-size: 50px; 
+}
+#title:hover{
+    color: #001A57;
+}
+
+#navLink ul {
+    list-style: none; 
+    margin: 0 auto; 
+    width: auto;
+}
+
+#navLink li {
+    display: inline-block;
+    margin: 0;
+}
+
+#navLink a:link, a:visited {
 	text-align: center;
-	padding: 10px;
-	margin-top: 1%;
-	margin-right: auto;
-	margin-left: auto;
+    display: block;
+    font-weight: bold;
+    width: 5em;
+}
+
+#navLink a:hover{
+    background: #8FBC8F;
+}
+
+#navLink   {
+	background-color: #0F1626;
+    margin: 1em auto 0em auto;
+    line-height: 40px;
+    padding: 0;
 	width: auto;
+    height: 40px;
+    text-align: center;   
 }
-footer {
-	color: white;
-	background-color: #0F1626;
-	text-align: center;
-	font-size: small;
-	padding: 2%;
+
+#navLink .active>a {
+    border-bottom: solid 2px #FFB6C1;
 }
-.title {
-	text-align: center;
-	color: #001A57;
-	font-family: cabin;
-	font-style: normal;
-	font-weight: 600;
-	margin-bottom: auto;
-	margin-top: auto;
-	font-size: 45px;
-}
+
+/* Body */
+
 .contact {
 	margin: auto;
 	text-align: center;
@@ -109,45 +138,7 @@ footer {
 	box-shadow: 0px px;
     padding: 15px;
 }
-.navHome {
-	margin-left: 3%;
-	margin-right: 3%;
-	-webkit-transition: all .3s ease-in-out;
-	-o-transition: all .3s ease-in-out;
-	transition: all .3s ease-in-out;
-	text-align: center;
-}
-.navPortfolio {
-	margin-left: 3%;
-	margin-right: 3%;
-	-webkit-transition: all .3s ease-in-out;
-	-o-transition: all .3s ease-in-out;
-	transition: all .3s ease-in-out;
-	text-align: center;
-}
-.navResume {
-	margin-left: 3%;
-	margin-right: 3%;
-	-webkit-transition: all .3s ease-in-out;
-	-o-transition: all .3s ease-in-out;
-	transition: all .3s ease-in-out;
-	text-align: center;
-}
-.navHome:hover {
-	color: #FFFACD;
-	font-style: normal;
-	border-bottom: thin ridge #FFFFFF;
-}
-.navResume:hover {
-	color: #FFFACD;
-	font-style: normal;
-	border-bottom: thin ridge #FFFFFF;
-}
-.navPortfolio:hover {
-	color: #FFFACD;
-	font-style: normal;
-	border-bottom: thin ridge #FFFFFF;
-}
+
 .headshot {
 	float: none;
 	margin: 1% auto;
@@ -177,22 +168,6 @@ footer {
     margin: auto;
 }
 
-.top {
-	font-size: medium;
-	color:white;
-}
-.top:hover {
-	color: #FFFFFF;
-	font-style: normal;
-	border-bottom:thin ridge #FFFFFF;
-}
-.foot {
-	color:white;
-	font-size: medium;
-}
-nav a {
-	font-size: x-large;
-}
 .rowtext {
 	float: none;
 	text-align: center;
@@ -224,11 +199,6 @@ nav a {
   border-radius: 3px;
 }
 
-#google_translate_element {
-   align-content: center;
-   text-align:center;
-}
-
 /* Position the "next button" to the right */
 .next {
   right: 0;
@@ -253,12 +223,39 @@ nav a {
   transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
-  background-color: #FFFFFF;
+/* Footer */
+
+footer {
+	color: white;
+	background-color: #0F1626;
+	text-align: center;
+	font-size: small;
+	padding: 2%;
+}
+
+.top {
+	font-size: medium;
+	color:white;
+}
+.top:hover {
+	color: #FFFFFF;
+	font-style: normal;
+	border-bottom:thin ridge #FFFFFF;
+}
+.foot {
+	color:white;
+	font-size: medium;
 }
 
 /*Tablet and Desktop View*/
 @media (min-width:600px){
+    
+    #navLink a:link, a:visited {
+	   text-align: center;
+        display: block;
+        font-weight: bold;
+        width: 10em;
+    }   
 	body {
 		max-width: 900px;
 		margin-left: auto;
@@ -284,7 +281,7 @@ nav a {
         color: #0F1626;
 	}
 	.rowalternate .rowimage{
-		width: 50%;
+		width: 40%;
 		display: inline-block;
 		margin:0;
 		padding-left: 3%;
@@ -307,9 +304,6 @@ nav a {
     }
 	footer{
 		margin-bottom: 1%;
-	}
-	nav a {
-	font-size: large;
 	}
 
 }
