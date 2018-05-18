@@ -24,7 +24,7 @@ h2 {
 	padding-top: 1%;
 }
 .row h3, .rowalternate h3 {
-	font-family: Merriweather, serif;
+	font-family: EB Garamond, serif
 	margin: 2%;
 	font-size: x-large;
 	color: #FFFFFF;
@@ -33,7 +33,7 @@ h2 {
 }
 
 h1, h2 {
-    font-family: Merriweather, serif;
+    font-family: EB Garamond, serif;
     font-style: normal;
     margin-top: auto;
 }
@@ -57,10 +57,16 @@ a img {
 	display: inline;
 }
 a {
+    font-family: Merriweather, serif;
+    font-size: 1.1em;
 	color: #FFFFFF;
 	text-decoration: none;
-	padding-bottom: 0px;
-    font-size: x-large;
+	padding-bottom: 0px;  
+}
+a:hover {
+	color: #FFFFFF;
+	font-style: normal;
+	border-bottom:thin ridge #FFFFFF;
 }
 
 .main {
