@@ -133,6 +133,11 @@ a {
     width: 10em;
 }  
 
+.navLink li:first-child{
+    font-family: lato, merriweather, serif;
+    font-size: 20px;
+}
+
 .navLink li .icon {
     text-align: center;
     display: none;
@@ -654,10 +659,9 @@ footer {
 }
 .foot {
     font-size: 1em;
-    font-family: Merriweather;
+    font-family: lato, merriweather, serif;
     margin: 1% auto;
     color: white;
-    border-top: 1px solid rgba(0,0,0,0.1);
 }
 
 .footersection {
@@ -703,4 +707,3 @@ footer {
     margin-left: auto;
     margin-right: auto; 
 }
-
