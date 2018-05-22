@@ -1,0 +1,215 @@
+
+/*---------- Styling for Blog ---------->*/
+
+.image-wrap {
+    position: relative;
+    display:block;
+    overflow: hidden;
+    opacity: 0.7;
+    background-image: url("/assets/img/library.jpg");
+    height: 500px;
+    background-size: cover;
+}
+
+#Bitmoji {
+    width: 80px;
+    height:80px;
+    padding: 0;
+    margin: 0 auto;
+    display: inline-block;
+}
+
+.container3 {
+    position: absolute;
+    min-width: 350px;
+    min-height: 70px;
+    left: 50%;
+    top: 50%;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.9);
+    outline: 4px solid #FFFFFF;
+    outline-offset: 5px;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    display: flex;
+    align-items: center;
+}
+
+.container3 h1 {
+    margin: 0 auto;
+    padding: 0;
+    display: inline-block;
+    transform: translateX(45px);
+}
+
+.thinbanner {
+    min-height: 20px;
+    width: 100%;
+    background-color: #e5e5e5;
+    text-align: center;   
+    padding: 5px;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.8);
+}
+
+.postContainer {
+    min-height: 400px;
+    background-color: gainsboro;
+}
+
+.postCol {
+    float: left;
+    width: 50%;
+    height: auto;
+    margin: auto;
+    text-align: center;
+}
+
+.postRow:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.postRow {
+    width: 90%;
+    height: auto;
+    padding: 1%;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: gainsboro;
+}
+
+.post {
+    position: relative;
+    display: inline-block;
+    width: 75%;
+    height: auto;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+    transition: all 0.3s ease-in-out;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    padding:2px 16px;
+}
+
+.post::after {
+    content: '';
+    position: relative;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    transition: opacity 0.3s ease-in-out;
+}
+
+.post:hover {
+    cursor: pointer;
+    transform: scale(1.1, 1.1);
+}
+
+.post:hover::after {
+    opacity: 1;
+}
+.post h4 {
+    color: black;
+    font-size: 14px;
+}
+
+.post-img {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width:150px;
+    height: 200px;
+}
+
+@media screen and (max-width: 850px) {
+    .postCol {
+        float: left;
+        width: 100%;
+        height: auto;
+        margin: auto;
+        text-align: center;
+    }
+}
+
+.single-post-header {
+    min-height: 500px;
+    background-color: darkcyan;
+}
+
+.post-header h1 {
+    font-family: "HelveticaNeue", sans-serif;
+    color:white;
+    font-style:italic;
+    font-weight:500;
+    font-size:55px;
+    line-height:1.3em; 
+}
+
+.header-container {
+    text-align: center;
+    width: 90%;
+    position:absolute;
+    left: 50%;
+    top: 35%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.subheader-container {
+    position:absolute;
+    text-align: center;
+    width: 100%;
+    left: 50%;
+    top: 55%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.post-header h2 {
+    font-size: 25px;
+}
+
+.blogcontent {
+    min-height: 600px;
+    margin: 2% auto;
+    width: 75%;
+}
+
+.blogcontent h3, .blogcontent a {
+    color: black;
+    font-family: "HelveticaNeue", sans-serif;
+    font-style: normal;
+    font-weight:150;
+    font-size:19px;
+    line-height: 1.6;
+}
+
+.blogcontent a:hover {
+    border-bottom: 1px solid black;
+}
+
+
+@media screen and (max-width: 850px) {
+    .image-wrap {
+        background-size: cover;
+        background-position: right -500px center;
+    }
+
+    .post-header h1 {
+        font-family: "HelveticaNeue", sans-serif;
+        color:white;
+        font-style:italic;
+        font-weight:500;
+        font-size:25px;
+        line-height:1.3em; 
+    }
+
+    .subheader-container {
+        font-family: "HelveticaNeue";
+        font-size: 15;
+    }
+}

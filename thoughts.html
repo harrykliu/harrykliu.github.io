@@ -1,0 +1,123 @@
+<!doctype html>
+<html ng-app="myApp">
+    <head>
+        <link rel="icon" href="/assets/img/logo.ico">
+
+        <meta charset="UTF-8">
+        <title>HNotes</title>
+        <meta name="keywords" content="Harry Liu, Duke University, Student">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Custom css -->
+        <link href="/assets/css/Styles.css" rel="stylesheet" type="text/css">
+        <link href="/assets/css/Blog.css" rel="stylesheet" type="text/css">
+
+        <!-- Web Fonts -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous" rel="stylesheet">
+
+        <!-- AngularJS Material Design CSS -->
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.8/angular-material.min.css">
+    </head>
+
+    <div>
+        <!-- navbar -->
+        <nav class=navLink id=myNav><ol>
+            <li><a href="index.html">Harry Liu 仲阳</a></li> 
+            <li id=nav><a href="index.html">Bio</a></li>
+            <li id=navActive><a href="thoughts.html">Thoughts</a></li>
+            <li id=nav><a href="Liu_CV.pdf" target="_blank">CV</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="myMobileMenu()">
+                <i class="fa fa-bars"></i> </a>
+            </li>
+            </ol>
+        </nav>
+    </div>
+
+    <!-- banner -->
+    <section class="image-wrap">
+        <span class="container3">    
+            <h1><b>H</b>Notes</h1>
+            <img id="Bitmoji" src="/assets/img/Bitmoji.png">
+        </span>
+    </section>
+
+    <section class=thinbanner>
+        <h4>Just some thoughts on the books that I've been reading</h3>
+    </section>
+
+    <section class=postContainer>
+        <div class=postRow>
+            <div class=postCol>
+                <a href="/blog/breath.html">
+                    <div class=post>
+                        <br>
+                        <h2>When Breath Becomes Air</h2>
+                        <h4>&#9201 Feb 2017</h4>
+                        <img class=post-img src="/assets/img/blog/breath_becomes_air.jpg">
+                        <p>When Breath Becomes Air takes us through the personal reflections...</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class=postCol>
+                <a href="/blog/identity.html">
+                    <div class=post>
+                        <br>
+                        <h2>Identity Economics</h2>
+                        <h4>&#9201 March 2017</h4>
+                        <img class=post-img src="/assets/img/blog/identity_economics.jpg">
+                        <p> Akerlof and Kranton add identity to the notion of tastes and highlight the importance of...</p>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- footer start -->
+    <footer>   
+        <div class="hamburger" ng-controller= "speedDialController as ctrl" layout = "row" ng-cloak>
+            <div class = "lock-size" layout = "row" layout-align = "center center">
+                <md-fab-speed-dial md-open = "ctrl.isOpen"
+                                   md-direction = "{{ctrl.selectedDirection}}"
+                                   ng-class = "ctrl.selectedMode">
+                    <md-fab-trigger>
+                        <md-button aria-label = "contact" class = "md-fab md-warn">
+                            <md-icon class = "material-icons">contacts</md-icon>
+                        </md-button>
+                    </md-fab-trigger>
+                    <md-fab-actions>
+                        <md-button href="mailto:harry.liu@duke.com" target="_blank" aria-label = "Email" class = "md-fab md-raised md-primary md-accent">
+                            <md-icon class = "material-icons">email</md-icon>
+                        </md-button>            
+                        <md-button href="https://www.linkedin.com/in/liuharryk" target="_blank" aria-label = "LinkedIn" class = "md-fab md-raised md-primary md-accent">
+                            <i class="fab fa-linkedin-in"></i>
+                        </md-button>
+                    </md-fab-actions>
+                </md-fab-speed-dial>
+            </div>
+        </div>
+        <section class=footersection> 
+            <h2 class="foot">Copyright © 2017-2018. Coded by Harry Liu with ♥ and 100% recycled pixels.</h2>
+            <br>
+            <a class="top" href="#top">Top↑</a>
+        </section>
+    </footer>
+
+    <!-- JavaScript files placed at the end of the document so the pages load faster -->
+
+    <!-- Jquery file -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- For AngularJS -->
+    <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.min.js"></script>
+    <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-aria.min.js"></script>
+    <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-messages.min.js"></script>
+    <script src = "https://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.js"></script>
+
+    <script src="/assets/js/speedDial.js"></script>
+    <script src="/assets/js/mobile.js"></script>
+</html>

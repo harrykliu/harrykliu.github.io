@@ -1,35 +1,192 @@
 <!doctype html>
-<html>
+<html lang=en ng-app="myApp">
     <head>
+        <link rel="icon" href="/assets/img/logo.ico">
+
         <meta charset="UTF-8">
+        <title>Harry Liu | Home</title>
+        <meta name="keywords" content="Harry Liu, Duke University, Student">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Harry Liu | Coming Soon</title>
+
+        <!-- Custom css -->
         <link href="/assets/css/Styles.css" rel="stylesheet" type="text/css">
+
+        <!-- Web Fonts -->
+        <link href='https://fonts.googleapis.com/css?family=Merriweather:300' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Oswald:400' rel='stylesheet' type='text/css'>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous" rel="stylesheet">
+
+        <!-- AngularJS Material Design CSS -->
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.8/angular-material.min.css">
     </head>
 
     <body class="index">
-        <header class="body">
-            <a name="top"></a>
+        <!-- navbar -->
+        <nav class=navLink id=myNav><ol>
+            <li><a href="#">Harry Liu 仲阳</a></li> 
+            <li id=navActive><a href="#">Bio</a></li>
+            <li id=nav><a href="thoughts.html">Thoughts</a></li>
+            <li id=nav><a href="Liu_CV.pdf" target="_blank">CV</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="myMobileMenu()">
+                <i class="fa fa-bars"></i> </a>
+            </li>
+            </ol>
+        </nav>
 
-            <h1> <a href="index.html" id="title">Harry Liu 仲阳</a></h1>
-            <nav id=navLink><ul>
-                <li><a href="index.html">Bio</a></li>
-                <li><a href="Liu_CV.pdf" target="_blank">CV</a></li>
-                </ul></nav> 
-            <div class="contact"> 
-
-            </div>
-        </header>
-        <section class="hmm">
-            <h2>This site is under renovation. Website 2.0 coming soon...</h2>
-            <p>Just missed the old one, but a completely new design is on its way!</p>
-            <img src="/assets/img/Baymax.png" alt="" width="300" height="323" class="baymax"/>
+        <!-- banner -->
+        <section class="image-wrap">
+            <span class="container">
+                <h1>Hello</h1>
+                <br>
+                <p class="typed"></p>
+            </span>
+            <span class="container2">
+                <i class="fas fa-chevron-down md-36"></i>
+            </span>
         </section>
-        <footer>
-            <p class=foot>Copyright © 2017-2018. Coded by Harry Liu with ♥ and 100% recycled pixels.</p>
-            <a href="mailto:harry.liu@duke.com" target="_blank"><img src="/assets/img/orange-opened-envelope-letter-mail-27.png" alt="Email" width="50" height="51" title="Email"/></a>
-            <a href="https://www.linkedin.com/in/liuharryk" target="_blank"><img src="assets/img/Linkedin_circle.svg_.png" alt="LinkedIn" width="50" height="50" title="LinkedIn"/></a> 
-        </footer>
 
+        <!-- quickinfo (image+slideshow) section start -->
+        <section class="quickabout">
+            <div class="myImage">
+                <img id=me src= "/assets/img/Smokey_Mountains.jpg" alt="Harry Liu">
+            </div>
+            <section class="second">
+                <div class="slideshow-container">
+                    <div class="rowtext">
+                        <h3>I'm a junior at Duke from NYC majoring in CS and Economics</h3>
+                        <br>
+                        <img src="/assets/img/chapel.png" width="300" height="169" alt=""/> 
+                    </div>
+
+                    <div class="rowtext">
+                        <h3>A team player and a doer: always seeking to be a part of a diverse group and to achieve set goals.</h3>
+                        <br>
+                        <img src="/assets/img/teamwork.jpg" width="300" height="169" alt=""/> 
+                    </div>
+
+                    <div class="rowtext">
+                        <h3>In my free time, I like to take long walks, watch Spanish telenovelas, and listen to <a href="https://play.spotify.com/user/harry.liu/playlist/73aoFGD9TUrGXhliM5mydf" target="_blank" class="music">'80s and '90s music.</a>
+                        </h3>
+                        <br>
+                        <img src="/assets/img/freetime.jpg" width="300" height="169" alt=""/> 
+                    </div>
+                </div>
+                <br>
+                <div class="rowDot">
+                    <span class="dot" onclick="currentSlide(1)"></span> 
+                    <span class="dot" onclick="currentSlide(2)"></span> 
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div> 
+                <a class="prev" onclick="switchSlides(-1)">&#10094;</a>
+                <a class="next" onclick="switchSlides(1)">&#10095;</a>
+            </section>
+        </section>
     </body>
+
+    <!-- experiences section -->
+    <div class="timeline parallax">
+        <h1>My Experiences</h1>
+        <br>
+        <div class="box right">
+            <div class="content">
+                <h2>Fall 2017 - Avalon House President</h2>
+                <br>
+                <p> Facilitate team brainstorming for dorm events to develop house identity and strengthen community.</p>
+                <a class="buttonlink" href="http://www.dukechronicle.com/article/2017/11/171106-pate" target="_blank"><button class="button" ><span>Chronicle Feature</span></button></a>
+            </div>
+        </div>
+
+        <div class="box left">
+            <div class="content">
+                <h2>Summer 2017 - <a href="https://dukeengage.duke.edu/" target="_blank">DukeEngage</a> Ecuador</h2>
+                <br>
+                <p> Learned about public health infrastructure challenges and supported Damian House Foundation with community outreach initiatives on Hansen's Disease. Produced informational videos and conducted bilingual tours for visitors.</p>
+                <a class="buttonlink" href="https://dukeengage.duke.edu/la-fundacion-padre-damian/" target="_blank"><button class="button" ><span>Reflection Post</span></button></a>
+            </div>
+        </div>
+
+        <div class="box right">
+            <div class="content">
+                <h2>Summer 2016 - <a href="http://globaled.duke.edu/" target="_blank">Duke In Costa Rica</a></h2>
+                <br>
+                <p> Gained a more extensive understanding of national and local health issues in Costa Rica through coursework, research, and site visits to hospitals and clinics.</p>
+                <a class="buttonlink" href="https://globaled.duke.edu/student-experience/blog_student_stories/harry_liu_costa_rica" target="_blank"><button class="button" ><span>Experience Post</span></button></a>
+            </div>
+        </div>
+
+        <div class="box left">
+            <div class="content">
+                <h2>Fall 2016 to Present - Research Assistant @ <a href="http://kenan.ethics.duke.edu/people/research-assistants/" target="_blank">Kenan Institute For Ethics</a></h2>
+                <br>
+                <p> Support faculty in organizing and advertising events such as Kenan Distinguished Lectures. Perform administrative tasks with professional and attentive behavior.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- google translate -->
+    <div class="alert">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+        Change the Language  |  Cambia el idioma  |  更改语言
+        <div id="google_translate_element"></div><script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'es,zh-CN', layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL}, 'google_translate_element');
+        }
+        </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    </div>
+
+    <!-- footer start -->
+    <footer>   
+        <section class=footersection> 
+            <div class="hamburger" ng-controller= "speedDialController as ctrl" layout = "row" ng-cloak>
+                <div class = "lock-size" layout = "row" layout-align = "center center">
+                    <md-fab-speed-dial md-open = "ctrl.isOpen"
+                                       md-direction = "{{ctrl.selectedDirection}}"
+                                       ng-class = "ctrl.selectedMode">
+                        <md-fab-trigger>
+                            <md-button aria-label = "contact" class = "md-fab md-warn">
+                                <md-icon class = "material-icons">contacts</md-icon>
+                            </md-button>
+                        </md-fab-trigger>
+                        <md-fab-actions>
+                            <md-button href="mailto:harry.liu@duke.com" target="_blank" aria-label = "Email" class = "md-fab md-raised md-primary md-accent">
+                                <md-icon class = "material-icons">email</md-icon>
+                            </md-button>            
+                            <md-button href="https://www.linkedin.com/in/liuharryk" target="_blank" aria-label = "LinkedIn" class = "md-fab md-raised md-primary md-accent">
+                                <i class="fab fa-linkedin-in"></i>
+                            </md-button>
+                        </md-fab-actions>
+                    </md-fab-speed-dial>
+                </div>
+            </div>
+            <h2 class="foot">Copyright © 2017-2018. Coded with ♥ and 100% recycled pixels.</h2>
+            <br>
+            <a class="top" href="#top">Top↑</a>
+        </section>
+    </footer>
+
+    <!-- JavaScript files placed at the end of the document so the pages load faster -->
+
+    <!-- Jquery file -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- For AngularJS -->
+    <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.min.js"></script>
+    <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-aria.min.js"></script>
+    <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-messages.min.js"></script>
+    <script src = "https://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.js"></script>
+
+    <!-- Modernizr javascript -->
+    <script src="/assets/js/modernizr-custom.js"></script>
+
+    <!-- thanks http://www.mattboldt.com/ -->
+    <script src="/assets/js/typed.js"></script>
+    <script src="/assets/js/myType.js"></script>
+
+    <script src="/assets/js/speedDial.js"></script>
+    <script src="/assets/js/slideshow.js"></script>
+    <script src="/assets/js/mobile.js"></script>
+
 </html>
