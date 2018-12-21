@@ -395,11 +395,7 @@ a {
         margin-top: 2%;
         display: block;
         text-align:center;
-        transform: translateY(325px);
-    }
-    .prev, .next {
-        top: 225%;
-        padding: 2%;
+        transform: translateY(340px);
     }
 }
 
