@@ -69,7 +69,7 @@ a {
     background-color: rgba(15, 22, 38, 1);
     box-shadow: 0 4px 8px 0 rgba(0,0,0, 0.2);
     line-height: 50px;
-    padding: 0;
+    padding-top: 0;
     width: 100%;
     height: 50px;
     overflow: hidden;
@@ -245,15 +245,13 @@ a {
 }
 
 .quickabout {
-    max-height: 600px;
+    min-height: 565px;
     background-color: #FFFFFF;
-    margin-bottom: 10px;
-    margin-top: 10px;
     overflow: hidden;
 }
 
 .myImage {
-    width: 50%;
+    width: 40%;
     height: auto;
     float: left;
 }
@@ -264,16 +262,16 @@ a {
 
 .second {
     margin: auto 0;
-    width: 50%;
     float:left;
+    width: 60%;
 }
 
 .slideshow-container{
     position: absolute;
     align-content: center;
     margin: 0 auto;
-    width: auto;
-    height: 600px;
+    width: 60%;
+    height: 565px;
     padding: 16px;
 }
 
@@ -285,7 +283,8 @@ a {
     transform: translateY(110px);
     -webkit-transform: translateY(110px);
     text-align: center;
-    width: 90%;
+    width: auto;
+    padding: 5px;
     margin: 0 auto;
     display: block;
 }
@@ -306,11 +305,10 @@ a {
 }
 
 .rowDot {
-    margin-top: 2%;
     display: block;
     text-align:center;
-    padding-bottom: 1em;
-    transform: translateY(175px);
+    width: auto;
+    transform: translateY(450px)
 }
 
 .prev, .next {
@@ -344,7 +342,6 @@ a {
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
-    transform: translateY(275px);
 }
 
 .activeDot, .dot:hover {
@@ -724,4 +721,18 @@ footer {
 @keyframes fade {
   from {opacity: 0} 
   to {opacity: 1}
+}
+
+
+
+#sectiontext {
+    color: white;
+    padding: 10px;
+    font-size: 30px;
+    font-family: "museo-sans", "roboto";
+}
+
+.inbetween {
+    background-color: #222;
+    min-height: 1px;
 }
