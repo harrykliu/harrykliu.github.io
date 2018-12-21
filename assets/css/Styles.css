@@ -395,7 +395,10 @@ a {
         margin-top: 2%;
         display: block;
         text-align:center;
-        transform: translateY(340px);
+        transform: translateY(345px);
+    }
+    .prev, .next {
+        visibility: hidden;
     }
 }
 
