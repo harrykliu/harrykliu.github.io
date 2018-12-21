@@ -6,10 +6,6 @@ function switchSlides(n) {
     showSlides(slideIndex += n);
 }
 
-function automaticSwitch(){
-    showSlides(slideIndex += 1)
-}
-
 /* when dot is clicked, change to selected slide */
 function currentSlide(n) {
     showSlides(slideIndex = n); 
@@ -34,5 +30,4 @@ function showSlides(n) {
 
     slides[slideIndex-1].style.display = "block"; 
     dots[slideIndex-1].className += " activeDot";
-    setTimeout(automaticSwitch, 8000);
 }
